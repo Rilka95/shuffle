@@ -1,0 +1,257 @@
+// Variables
+
+$enable-rounded: true !default;
+$enable-rfs: true !default;
+$enable-antialiasing: true !default;
+$enable-negative-margins: true !default;
+
+$border-width: 1px !default;
+$border-color: #E4E9ED !default;
+$border-radius: 1rem !default;
+$border-radius-sm: 0.5rem !default;
+$border-radius-lg: 1.5rem !default;
+
+$min-contrast-ratio: 2 !default;
+
+$body-color: #7A899B !default;
+$text-muted: #7A899B !default;
+
+$headings-color: #052461 !default;
+$white: #fff !default;
+$black: #000 !default;
+
+$gray-100: #F0F2F4 !default;
+$gray-200: #E4E9ED !default;
+$gray-300: #d1d5db !default;
+$gray-400: #9ca3af !default;
+$gray-500: #7A899B !default;
+$gray-600: #4b5563 !default;
+$gray-700: #374151 !default;
+$gray-800: #1f2937 !default;
+$gray-900: #111827 !default;
+
+$primary: #2796CE !default;
+$secondary: #5F27CE !default;
+$success: #10b981 !default;
+$info: #2796CE !default;
+$warning: #f59e0b !default;
+$danger: #ef4444 !default;
+$light: #F0F2F4 !default;
+$dark: #052461 !default;
+
+$primary-light: #E1F1F9 !default;
+$secondary-light: #7855d0 !default;
+$success-light: #ecfdf5 !default;
+$info-light: #E1F1F9 !default;
+$warning-light: #fffbeb !default;
+$danger-light: #fef2f2 !default;
+$light-light: #F8F9FA !default;
+
+$theme-colors: (
+    primary: $primary,
+    secondary: $secondary,
+    success: $success,
+    info: $info,
+    warning: $warning,
+    danger: $danger,
+    light: $light,
+    dark: $dark,
+    primary-light: $primary-light,
+    secondary-light: $secondary-light,
+    success-light: $success-light,
+    info-light: $info-light,
+    warning-light: $warning-light,
+    danger-light: $danger-light,
+    light-light: $light-light
+) !default;
+
+$blue: #2796CE !default;
+$red: #ef4444 !default;
+$yellow: #f59e0b !default;
+$green: #10b981 !default;
+
+$blue-100: #E1F1F9 !default;
+$blue-200: #bfdbfe !default;
+$blue-300: #93c5fd !default;
+$blue-400: #60a5fa !default;
+$blue-500: #2796CE !default;
+$blue-600: #2563eb !default;
+$blue-700: #1d4ed8 !default;
+$blue-800: #1e40af !default;
+$blue-900: #E1F1F9 !default;
+$red-100: #fee2e2 !default;
+$red-200: #fecaca !default;
+$red-300: #fca5a5 !default;
+$red-400: #f87171 !default;
+$red-500: #ef4444 !default;
+$red-600: #dc2626 !default;
+$red-700: #b91c1c !default;
+$red-800: #991b1b !default;
+$red-900: #7f1d1d !default;
+$yellow-100: #fef3c7 !default;
+$yellow-200: #fde68a !default;
+$yellow-300: #fcd34d !default;
+$yellow-400: #fbbf24 !default;
+$yellow-500: #f59e0b !default;
+$yellow-600: #d97706 !default;
+$yellow-700: #b45309 !default;
+$yellow-800: #92400e !default;
+$yellow-900: #78350f !default;
+$green-100: #d1fae5 !default;
+$green-200: #a7f3d0 !default;
+$green-300: #6ee7b7 !default;
+$green-400: #34d399 !default;
+$green-500: #10b981 !default;
+$green-600: #059669 !default;
+$green-700: #047857 !default;
+$green-800: #065f46 !default;
+$green-900: #064e3b !default;
+
+$container-max-widths: (
+    sm: 640px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1280px,
+    2xl: 1536px
+) !default;
+
+$font-family-base: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !default;
+
+$font-size-base: 0.875rem !default;
+$font-size-sm: 0.75rem !default;
+$font-size-lg: 1rem !default;
+$font-weight-bold: 600 !default;
+$small-font-size: 0.625rem !default;
+
+$line-height-lg: 1 !default;
+
+$headings-font-weight: 600 !default;
+$headings-font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !default;
+$headings-line-height: 1 !default;
+
+$h1-font-size: 2.25rem !default;
+$h2-font-size: 1.875rem !default;
+$h3-font-size: 1.5rem !default;
+$h4-font-size: 1.25rem !default;
+$h5-font-size: 1.125rem !default;
+$h6-font-size: 1rem !default;
+
+$display-font-weight: 600 !default;
+$display-font-sizes: (
+    1: 8rem,
+    2: 6rem,
+    3: 4.5rem,
+    4: 3.75rem,
+    5: 3rem
+) !default;
+$display-line-height: 1 !default;
+
+$lead-font-size: 0.875rem !default;
+$lead-font-weight: 400 !default;
+
+$box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !default;
+$box-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !default;
+$box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !default;
+$box-shadow-inset: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06) !default;
+
+
+$spacers: (
+    0: 0px,
+    1: 0.25rem,
+    2: 0.5rem,
+    3: 0.75rem,
+    4: 1rem,
+    5: 1.25rem,
+    6: 1.5rem,
+    7: 1.75rem,
+    8: 2rem,
+    9: 2.25rem,
+    10: 2.5rem,
+    11: 2.75rem,
+    12: 3rem,
+    14: 3.5rem,
+    16: 4rem,
+    20: 5rem,
+    24: 6rem,
+    28: 7rem,
+    32: 8rem,
+    36: 9rem,
+    40: 10rem,
+    44: 11rem,
+    48: 12rem,
+    52: 13rem,
+    56: 14rem,
+    60: 15rem,
+    64: 16rem,
+    72: 18rem,
+    80: 20rem,
+    96: 24rem
+) !default;
+
+$negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
+
+$alert-border-width: 0 !default;
+$alert-border-radius: 0px !default;
+$alert-bg-scale: 0% !default;
+$alert-border-scale: 0% !default;
+$alert-color-scale: 0% !default;
+
+$badge-text-transform: uppercase !default;
+$badge-font-size: 0.625rem !default;
+$badge-font-weight: 500 !default;
+$badge-padding-y: 0.5rem !default;
+$badge-padding-x: 0.75rem !default;
+$badge-border-radius: 6px !default;
+
+$input-btn-padding-y: 0.5rem !default;
+$input-btn-padding-x: 1.5rem !default;
+$input-btn-font-size: 0.875rem !default;
+$input-btn-line-height: 1.25 !default;
+$input-btn-padding-y-sm: 0.5rem !default;
+$input-btn-padding-x-sm: 1rem !default;
+$input-btn-font-size-sm: 0.75rem !default;
+$input-btn-padding-y-lg: 1.25rem !default;
+$input-btn-padding-x-lg: 2rem !default;
+$input-btn-font-size-lg: 1.125rem !default;
+
+$btn-font-weight: 500 !default;
+
+$input-border-color: #E4E9ED !default;
+$input-placeholder-color: #9ca3af !default;
+
+$input-padding-y: 0.875rem !default;
+$input-padding-x: 1.5rem !default;
+
+$nav-link-font-size: 0.875rem !default;
+$nav-link-font-weight: 500 !default;
+
+$navbar-padding-y: 2rem !default;
+$navbar-padding-x: 1rem !default;
+$navbar-nav-link-padding-x: 1.5rem !default;
+$navbar-dark-color: #E4E9ED !default;
+$navbar-light-color: #7A899B !default;
+$navbar-light-hover-color: #111827 !default;
+$navbar-light-active-color: #111827 !default;
+$navbar-light-disabled-color: #7A899B !default;
+$navbar-toggler-border-radius: 1rem !default;
+$navbar-toggler-font-size: 8px !default;
+$navbar-toggler-padding-y: 1rem !default;
+$navbar-toggler-padding-x: 1rem !default;
+$navbar-toggler-focus-width: 0.125rem !default;
+
+$table-striped-bg: #F8F9FA !default;
+$table-active-bg: #F0F2F4 !default;
+$table-th-font-weight: 500 !default;
+
+$alert-color: null !default;
+$alert-font-size: null !default;
+
+$alert-border-top-width: $alert-border-width !default;
+$alert-border-right-width: $alert-border-width !default;
+$alert-border-bottom-width: $alert-border-width !default;
+$alert-border-left-width: $alert-border-width !default;
+
+$alert-border-top-right-radius: $alert-border-radius !default;
+$alert-border-top-left-radius: $alert-border-radius !default;
+$alert-border-bottom-right-radius: $alert-border-radius !default;
+$alert-border-bottom-left-radius: $alert-border-radius !default;
