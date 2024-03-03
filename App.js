@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom';
 
-import IndexPage from './pages/Index.js';
+import IndexPage from 'pages.Index.js';
 
 function App() {
   return (
